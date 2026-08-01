@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body bg-cream text-ink;
+}
+
+/* Traitement chromatique uniforme des photos de contenu (le logo reste intact) */
+main img {
+  filter: sepia(15%) saturate(88%) brightness(1.03) contrast(1.04);
+}
