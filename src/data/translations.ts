@@ -18,7 +18,7 @@ export type Dict = {
     i1t: string; i1x: string; i2t: string; i2x: string; i3t: string; i3x: string;
     i4t: string; i4x: string; i5t: string; i5x: string; i6t: string; i6x: string;
   };
-  apropos: { title: string; p1: string; p2: string; cta: string; v1t: string; v1x: string; v2t: string; v2x: string; v3t: string; v3x: string };
+  apropos: { title: string; p1: string; p2: string; cta: string; brochure: string; v1t: string; v1x: string; v2t: string; v2x: string; v3t: string; v3x: string };
   contact: { title: string; subtitle: string; note: string; lastName: string; firstName: string; email: string; phone: string; message: string; send: string };
   footer: { tagline: string; legal: string; privacy: string; clientArea: string };
   mentions: {
@@ -70,6 +70,7 @@ export const translations: Record<Lang, Dict> = {
       p1: "MIRGHANI est né d'une conviction simple : une résidence bien entretenue repose sur la continuité et le souci du détail.",
       p2: "Chaque résidence bénéficie de la même attention : régularité dans les interventions, rigueur dans le suivi et communication directe.",
       cta: "Contactez-moi",
+      brochure: "Télécharger la brochure",
       v1t: "Une approche humaine", v1x: "Je privilégie la proximité et la confiance.",
       v2t: "Une organisation fiable", v2x: "Des processus clairs pour des résultats durables.",
       v3t: "Une ambition simple", v3x: "Vous simplifier la vie et préserver votre cadre de vie.",
@@ -151,6 +152,7 @@ export const translations: Record<Lang, Dict> = {
       p1: "MIRGHANI was born from a simple conviction: a well-maintained residence relies on continuity and attention to detail.",
       p2: "Every residence receives the same care: regularity in interventions, rigour in follow-up and direct communication.",
       cta: "Contact me",
+      brochure: "Download the brochure",
       v1t: "A human approach", v1x: "I prioritise proximity and trust.",
       v2t: "A reliable organisation", v2x: "Clear processes for lasting results.",
       v3t: "A simple ambition", v3x: "Make your life easier and preserve your living environment.",
@@ -232,6 +234,7 @@ export const translations: Record<Lang, Dict> = {
       p1: "MIRGHANI nasce da una convinzione semplice: una residenza ben curata si basa sulla continuità e sull'attenzione ai dettagli.",
       p2: "Ogni residenza riceve la stessa attenzione: regolarità negli interventi, rigore nel follow-up e comunicazione diretta.",
       cta: "Contattami",
+      brochure: "Scarica la brochure",
       v1t: "Un approccio umano", v1x: "Privilegio la vicinanza e la fiducia.",
       v2t: "Un'organizzazione affidabile", v2x: "Processi chiari per risultati duraturi.",
       v3t: "Un'ambizione semplice", v3x: "Semplificarti la vita e preservare il tuo ambiente di vita.",

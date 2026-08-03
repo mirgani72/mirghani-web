@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Users, ShieldCheck, Target } from 'lucide-react';
+import { Users, ShieldCheck, Target, Download } from 'lucide-react';
 import Button from '../components/Button';
 import { PHOTOS } from '../data/content';
 import { useI18n } from '../lib/i18n';
@@ -18,7 +18,7 @@ export default function APropos() {
         <img
           src={PHOTOS.shutters}
           alt="Façade de résidence avec volets"
-          className="block w-full aspect-[7/6] max-h-[340px] sm:aspect-[2/1] sm:max-h-[380px] md:aspect-[5/2] md:max-h-[440px] object-cover"
+          className="block w-full aspect-[1/1] max-h-[380px] sm:aspect-[7/4] sm:max-h-[420px] md:aspect-[5/2] md:max-h-[460px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-10 md:px-12 max-w-2xl">
@@ -29,9 +29,18 @@ export default function APropos() {
           <p className="text-white/85 max-w-md mb-6 text-sm md:text-base leading-relaxed">
             {t('apropos.p2')}
           </p>
-          <Link to="/contact">
-            <Button>{t('apropos.cta')}</Button>
-          </Link>
+          <div className="flex flex-wrap items-center gap-6">
+            <Link to="/contact">
+              <Button>{t('apropos.cta')}</Button>
+            </Link>
+            <a
+              href="/documents/MIRGHANI-Brochure.pdf"
+              download
+              className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-cream hover:text-white pb-1 border-b border-gold transition-colors"
+            >
+              {t('apropos.brochure')} <Download className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </section>
 
