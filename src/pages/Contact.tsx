@@ -32,8 +32,8 @@ export default function Contact() {
     <main>
       <section className="relative overflow-hidden">
         <img
-          src={PHOTOS.entrance}
-          alt="Entrée d'immeuble"
+          src={PHOTOS.facade}
+          alt="Façade de résidence moderne"
           className="block w-full aspect-[7/6] max-h-[340px] sm:aspect-[2/1] sm:max-h-[380px] md:aspect-[5/2] md:max-h-[440px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
@@ -101,8 +101,8 @@ export default function Contact() {
 
       <section className="relative">
         <img
-          src={PHOTOS.entrance}
-          alt="Entrée d'immeuble avec porte et numéro"
+          src={PHOTOS.facade}
+          alt="Façade de résidence moderne"
           className="block w-full aspect-[7/6] max-h-[340px] sm:aspect-[2/1] sm:max-h-[380px] md:aspect-[5/2] md:max-h-[440px] object-cover"
         />
       </section>

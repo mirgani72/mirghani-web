@@ -24,8 +24,8 @@ export default function Accueil() {
     <main>
       <section className="relative overflow-hidden">
         <img
-          src={PHOTOS.entrance}
-          alt="Entrée soignée d'une résidence"
+          src={PHOTOS.hillside}
+          alt="Résidence surplombant les collines du Cannet"
           className="block w-full aspect-[1/1] max-h-[380px] sm:aspect-[7/4] sm:max-h-[420px] md:aspect-[2/1] md:max-h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />

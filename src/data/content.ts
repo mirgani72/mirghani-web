@@ -24,4 +24,6 @@ export const PHOTOS = {
   lobby: '/images/lobby.jpg',
   pathway: '/images/pathway.jpg',
   street: '/images/street.jpg',
+  hillside: '/images/hillside.jpg',
+  facade: '/images/facade.jpg',
 };
