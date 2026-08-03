@@ -5,9 +5,9 @@ export default function MentionsLegales() {
   const { t } = useI18n();
   const IDENTITY: [string, string][] = [
     [t('mentions.statut'), t('mentions.statutV')],
-    ['SIRET', '904 079 795 00020'],
+    [t('mentions.siret'), '[SIRET à compléter]'],
     [t('mentions.tva'), t('mentions.tvaV')],
-    [t('mentions.adresse'), '33 Rue Sainte-Catherine, Lecaterina Résidence, 06110 Le Cannet'],
+    [t('mentions.adresse'), '[adresse complète à compléter]'],
     [t('mentions.telephone'), CONTACT.phoneDisplay],
     [t('mentions.email'), CONTACT.email],
     [t('mentions.dirigeant'), 'Khalid MIRGHANI — Fondateur'],
@@ -20,7 +20,7 @@ export default function MentionsLegales() {
 
       <section className="mb-10">
         <h2 className="font-display text-2xl text-navy mb-4">{t('mentions.s1t')}</h2>
-        <p className="text-ink mb-4">
+        <p className="text-ink mb-4 whitespace-pre-line">
           {t('mentions.s1p')}
         </p>
         <div className="bg-white border border-navy/10 rounded-sm p-6">

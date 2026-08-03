@@ -84,7 +84,7 @@ export const translations: Record<Lang, Dict> = {
     mentions: {
       title: "Mentions légales",
       s1t: "Éditeur du site",
-      s1p: "Le site MIRGHANI est édité par Khalid MIRGHANI, auto-entrepreneur, immatriculé sous le numéro SIRET 904 079 795 00020.",
+      s1p: "Le présent site est édité par MIRGHANI, entreprise individuelle (EI)\n(micro-entreprise), immatriculée sous le numéro SIRET [SIRET à compléter], dont l'adresse\nest [adresse complète à compléter].",
       statut: "Statut", statutV: "Auto-entrepreneur — Nettoyage et intendance de résidences",
       siret: "SIRET", tva: "TVA", tvaV: "Non applicable, art. 293 B du CGI",
       adresse: "Adresse", telephone: "Téléphone", email: "Email", dirigeant: "Dirigeant",

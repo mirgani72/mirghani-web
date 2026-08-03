@@ -5,7 +5,7 @@ export const CONTACT = {
   address: '33 Rue Sainte-Catherine, 06110 Le Cannet',
 };
 
-// Espace client (OS connecté au backend Cloudflare)
+// Espace client (connexion au backend Cloudflare à venir)
 export const PORTAL_URL = 'https://mirghani.pages.dev/login';
 
 export const NAV_ITEMS = [
