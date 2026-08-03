@@ -18,7 +18,7 @@ export default function APropos() {
         <img
           src={PHOTOS.shutters}
           alt="Façade de résidence avec volets"
-          className="block w-full h-[45vh] sm:h-[50vh] md:h-[55vh] object-cover"
+          className="block w-full aspect-[7/6] max-h-[340px] sm:aspect-[2/1] sm:max-h-[380px] md:aspect-[5/2] md:max-h-[440px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-10 md:px-12 max-w-2xl">
@@ -38,7 +38,7 @@ export default function APropos() {
       <section className="max-w-6xl mx-auto px-6 pb-16 pt-12 border-t border-navy/10 grid grid-cols-1 md:grid-cols-3 gap-10">
         {VALUES.map(({ Icon, key }) => (
           <div key={key}>
-            <span className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center text-gold mb-3">
+            <span className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center text-gold mb-2 md:mb-3">
               <Icon className="w-5 h-5" strokeWidth={1.5} />
             </span>
             <h3 className="font-semibold text-navy mb-2">{t(`apropos.${key}t`)}</h3>

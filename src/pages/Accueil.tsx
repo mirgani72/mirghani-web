@@ -26,7 +26,7 @@ export default function Accueil() {
         <img
           src={PHOTOS.entrance}
           alt="Entrée soignée d'une résidence"
-          className="block w-full h-[55vh] sm:h-[60vh] md:h-[65vh] object-cover"
+          className="block w-full aspect-[1/1] max-h-[380px] sm:aspect-[7/4] sm:max-h-[420px] md:aspect-[2/1] md:max-h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-10 md:px-12 max-w-2xl">
@@ -45,9 +45,6 @@ export default function Accueil() {
             </Link>
           </div>
         </div>
-        <span className="absolute top-5 right-7 bg-navy text-cream font-display w-10 h-10 rounded-sm flex items-center justify-center shadow-lg">
-          7
-        </span>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">

@@ -19,7 +19,7 @@ export default function Services() {
         <img
           src={PHOTOS.pathway}
           alt="Allée verdoyante d'une résidence"
-          className="block w-full h-[45vh] sm:h-[50vh] md:h-[55vh] object-cover"
+          className="block w-full aspect-[7/6] max-h-[340px] sm:aspect-[2/1] sm:max-h-[380px] md:aspect-[5/2] md:max-h-[440px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-10 md:px-12 max-w-2xl">
