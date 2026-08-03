@@ -22,28 +22,29 @@ export default function Accueil() {
   const { t } = useI18n();
   return (
     <main>
-      <section className="relative overflow-hidden">
-        <img
-          src={PHOTOS.hillside}
-          alt="Résidence surplombant les collines du Cannet"
-          className="block w-full aspect-[1/1] max-h-[380px] sm:aspect-[7/4] sm:max-h-[420px] md:aspect-[2/1] md:max-h-[500px] object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
-        <div className="absolute inset-0 flex flex-col justify-end px-6 pb-10 md:px-12 max-w-2xl">
-          <h1 className="font-display text-3xl md:text-5xl text-cream mb-4 leading-tight">
+      <section className="grid md:grid-cols-2 md:min-h-[560px]">
+        <div className="order-2 md:order-1 flex flex-col justify-center px-6 py-14 md:py-20 md:pl-12 lg:pl-20 md:pr-10 lg:pr-16">
+          <h1 className="font-display text-3xl md:text-5xl text-navy mb-4 leading-tight max-w-md">
             {t('accueil.heroTitle')}
           </h1>
-          <p className="text-white/85 max-w-md mb-7 text-sm md:text-base leading-relaxed">
+          <p className="text-ink-muted max-w-md mb-7 text-sm md:text-base leading-relaxed">
             {t('accueil.heroText')}
           </p>
           <div className="flex flex-wrap items-center gap-6">
             <Link to="/mon-approche">
               <Button>{t('accueil.ctaApproach')}</Button>
             </Link>
-            <Link to="/contact" className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-cream hover:text-white pb-1 border-b border-gold transition-colors">
+            <Link to="/contact" className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-navy hover:text-gold-dark pb-1 border-b border-gold transition-colors">
               {t('accueil.ctaContact')} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+        </div>
+        <div className="order-1 md:order-2 relative h-[420px] md:h-auto">
+          <img
+            src={PHOTOS.hillside}
+            alt="Résidence surplombant les collines du Cannet"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_70%]"
+          />
         </div>
       </section>
 

@@ -14,19 +14,13 @@ export default function APropos() {
   const { t } = useI18n();
   return (
     <main>
-      <section className="relative overflow-hidden">
-        <img
-          src={PHOTOS.shutters}
-          alt="Façade de résidence avec volets"
-          className="block w-full aspect-[1/1] max-h-[380px] sm:aspect-[7/4] sm:max-h-[420px] md:aspect-[5/2] md:max-h-[460px] object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/30 to-transparent" />
-        <div className="absolute inset-0 flex flex-col justify-end px-6 pb-10 md:px-12 max-w-2xl">
-          <h1 className="font-display text-3xl md:text-5xl text-cream mb-3">{t('apropos.title')}</h1>
-          <p className="text-white/85 max-w-md mb-3 text-sm md:text-base leading-relaxed">
+      <section className="grid md:grid-cols-2 md:min-h-[560px]">
+        <div className="order-2 md:order-1 flex flex-col justify-center px-6 py-14 md:py-20 md:pl-12 lg:pl-20 md:pr-10 lg:pr-16">
+          <h1 className="font-display text-3xl md:text-5xl text-navy mb-3">{t('apropos.title')}</h1>
+          <p className="text-ink-muted max-w-md mb-3 text-sm md:text-base leading-relaxed">
             {t('apropos.p1')}
           </p>
-          <p className="text-white/85 max-w-md mb-6 text-sm md:text-base leading-relaxed">
+          <p className="text-ink-muted max-w-md mb-6 text-sm md:text-base leading-relaxed">
             {t('apropos.p2')}
           </p>
           <div className="flex flex-wrap items-center gap-6">
@@ -36,11 +30,18 @@ export default function APropos() {
             <a
               href="/documents/MIRGHANI-Brochure.pdf"
               download
-              className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-cream hover:text-white pb-1 border-b border-gold transition-colors"
+              className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-navy hover:text-gold-dark pb-1 border-b border-gold transition-colors"
             >
               {t('apropos.brochure')} <Download className="w-4 h-4" />
             </a>
           </div>
+        </div>
+        <div className="order-1 md:order-2 relative h-[420px] md:h-auto">
+          <img
+            src={PHOTOS.shutters}
+            alt="Façade de résidence avec volets"
+            className="absolute inset-0 w-full h-full object-cover object-top"
+          />
         </div>
       </section>
 
