@@ -19,7 +19,7 @@ export default function Button({ children, variant = 'gold', className = '', ...
   return (
     <button
       {...rest}
-      className={`inline-flex items-center gap-2 px-7 py-3.5 text-xs font-semibold tracking-wider uppercase rounded-sm bg-gold hover:bg-gold-dark text-white transition-colors ${className}`}
+      className={`inline-flex items-center gap-2 px-7 py-3.5 text-xs font-semibold tracking-wider uppercase rounded-sm bg-gold hover:bg-gold-dark text-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed ${className}`}
     >
       {children}
     </button>

@@ -14,12 +14,15 @@ export type Dict = {
     bandTitle: string; bandText: string;
   };
   services: {
-    title: string; subtitle: string;
+    title: string; subtitle: string; presentation: string;
     i1t: string; i1x: string; i2t: string; i2x: string; i3t: string; i3x: string;
     i4t: string; i4x: string; i5t: string; i5x: string; i6t: string; i6x: string;
   };
   apropos: { title: string; p1: string; p2: string; cta: string; brochure: string; v1t: string; v1x: string; v2t: string; v2x: string; v3t: string; v3x: string };
-  contact: { title: string; subtitle: string; note: string; lastName: string; firstName: string; email: string; phone: string; message: string; send: string };
+  contact: {
+    title: string; subtitle: string; note: string; lastName: string; firstName: string; email: string; phone: string; message: string; send: string;
+    sending: string; success: string; error: string;
+  };
   footer: { tagline: string; legal: string; privacy: string; clientArea: string };
   mentions: {
     title: string; s1t: string; s1p: string; statut: string; statutV: string; siret: string; tva: string; tvaV: string;
@@ -58,6 +61,7 @@ export const translations: Record<Lang, Dict> = {
     services: {
       title: "Services",
       subtitle: "MIRGHANI prend en charge les aspects essentiels pour le bon fonctionnement de votre résidence au quotidien.",
+      presentation: "Télécharger la présentation",
       i1t: "Gestion des parties communes", i1x: "Entretien régulier et suivi des espaces intérieurs et extérieurs.",
       i2t: "Relation avec les résidents", i2x: "Écoute, informations utiles et communication claire.",
       i3t: "Accueil des livraisons et gestion des accès", i3x: "Réception des livraisons, gestion des accès et présence attentive au quotidien.",
@@ -78,8 +82,11 @@ export const translations: Record<Lang, Dict> = {
     contact: {
       title: "Contact",
       subtitle: "Je suis à votre écoute pour échanger sur les besoins spécifiques de votre résidence.",
-      note: "L'envoi ouvre votre messagerie avec ce message déjà rempli — rien n'est transmis automatiquement.",
+      note: "Vos coordonnées sont transmises directement à MIRGHANI.",
       lastName: "Nom", firstName: "Prénom", email: "Email", phone: "Téléphone", message: "Votre message", send: "Envoyer",
+      sending: "Envoi en cours…",
+      success: "Merci, votre message a bien été envoyé. Je vous répondrai rapidement.",
+      error: "Une erreur est survenue. Réessayez ou écrivez-moi directement à contact@mirghani.fr.",
     },
     footer: { tagline: "Je veille à ce que votre résidence reste agréable à vivre, chaque jour.", legal: "Mentions légales", privacy: "Confidentialité", clientArea: "Espace client" },
     mentions: {
@@ -140,6 +147,7 @@ export const translations: Record<Lang, Dict> = {
     services: {
       title: "Services",
       subtitle: "MIRGHANI takes care of the essential aspects for the smooth running of your residence every day.",
+      presentation: "Download the presentation",
       i1t: "Management of common areas", i1x: "Regular maintenance and follow-up of indoor and outdoor spaces.",
       i2t: "Relations with residents", i2x: "Listening, useful information and clear communication.",
       i3t: "Receiving deliveries and managing access", i3x: "Delivery reception, access management and attentive daily presence.",
@@ -160,8 +168,11 @@ export const translations: Record<Lang, Dict> = {
     contact: {
       title: "Contact",
       subtitle: "I am at your disposal to discuss the specific needs of your residence.",
-      note: "Sending opens your email application with the message pre-filled — nothing is transmitted automatically.",
+      note: "Your details are sent directly to MIRGHANI.",
       lastName: "Last name", firstName: "First name", email: "Email", phone: "Phone", message: "Your message", send: "Send",
+      sending: "Sending…",
+      success: "Thank you, your message has been sent. I'll get back to you shortly.",
+      error: "Something went wrong. Please try again or email me directly at contact@mirghani.fr.",
     },
     footer: { tagline: "I make sure your residence remains pleasant to live in, every day.", legal: "Legal notice", privacy: "Privacy policy", clientArea: "Client Area" },
     mentions: {
@@ -222,6 +233,7 @@ export const translations: Record<Lang, Dict> = {
     services: {
       title: "Servizi",
       subtitle: "MIRGHANI si occupa degli aspetti essenziali per il buon funzionamento della tua residenza ogni giorno.",
+      presentation: "Scarica la presentazione",
       i1t: "Gestione delle parti comuni", i1x: "Manutenzione regolare e controllo degli spazi interni ed esterni.",
       i2t: "Rapporto con i residenti", i2x: "Ascolto, informazioni utili e comunicazione chiara.",
       i3t: "Ricezione consegne e gestione accessi", i3x: "Ricezione delle consegne, gestione degli accessi e presenza attenta ogni giorno.",
@@ -242,8 +254,11 @@ export const translations: Record<Lang, Dict> = {
     contact: {
       title: "Contatti",
       subtitle: "Sono a tua disposizione per parlare delle esigenze specifiche della tua residenza.",
-      note: "L'invio apre il tuo programma di posta con il messaggio già compilato — nulla viene trasmesso automaticamente.",
+      note: "I tuoi dati vengono inviati direttamente a MIRGHANI.",
       lastName: "Cognome", firstName: "Nome", email: "Email", phone: "Telefono", message: "Il tuo messaggio", send: "Invia",
+      sending: "Invio in corso…",
+      success: "Grazie, il tuo messaggio è stato inviato. Ti risponderò a breve.",
+      error: "Si è verificato un errore. Riprova oppure scrivimi direttamente a contact@mirghani.fr.",
     },
     footer: { tagline: "Faccio in modo che la tua residenza resti piacevole da vivere, ogni giorno.", legal: "Note legali", privacy: "Informativa privacy", clientArea: "Area clienti" },
     mentions: {

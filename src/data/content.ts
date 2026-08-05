@@ -5,6 +5,9 @@ export const CONTACT = {
   address: '33 Rue Sainte-Catherine, 06110 Le Cannet',
 };
 
+// API du portail MIRGHANI MOS (Cloudflare Worker) — reçoit le formulaire de contact.
+export const CONTACT_API_URL = 'https://mirghani-worker.old-flower-753d.workers.dev/api/contact';
+
 // Espace client (connexion au backend Cloudflare à venir)
 export const PORTAL_URL = 'https://mirghani.pages.dev/login';
 
